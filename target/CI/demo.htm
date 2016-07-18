@@ -1,0 +1,31 @@
+日期：<{$date}>
+<br/>
+数量：<span id="count"></span>
+<script src="/js/jquery/jquery.js"></script>
+<script>
+$.ajax(
+        {
+          'url'     : '/api/app_info/demo',
+          'type'    : 'GET',
+          'data'    : null,
+          'success' : function(response)
+                      {
+                        try
+                        {
+                          var response = JSON.parse(response);
+                          if(!response.status)
+                          {
+                            throw response.message;
+                          }
+                        }
+                        catch(e)
+                        {
+                          alert('获取数据失败：' + e);
+                          return false;
+                        }
+
+                        document.getElementById('count').innerHTML = response.data.count;
+                      }
+        }
+      );
+</script>
