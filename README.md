@@ -14,5 +14,5 @@ Browser Side
 -----------------------------------
 * jquery+bootstrap+highchart
 
-
+Live Demo（Please using the anonymous login）: http://123.206.209.98:8080/CI/
 
