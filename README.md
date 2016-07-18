@@ -1,4 +1,4 @@
-using java SSM 
+Buiding a data management web using java SSM 
 ========================
 
 Frameworks and Tools
